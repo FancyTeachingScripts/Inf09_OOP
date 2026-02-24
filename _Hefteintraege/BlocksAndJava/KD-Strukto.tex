@@ -1,0 +1,63 @@
+
+\section{Struktogramme und Klassendiagramme}
+
+\textbf{Setze folgende Diagramme in BlueJ-Blockly um und notiere den Programmcode auf der Rückseite}
+
+\vspace{0.5cm}
+
+\textbf{Klassendiagramm:}
+
+\includegraphics[width=0.5\textwidth]{Aufgaben/BlocksAndJava/img/klasse.png} 
+
+\vspace{0.5cm}
+\textbf{Struktogramm für piAusgeben(double x):}
+
+\includegraphics[width=0.3\textwidth]{Aufgaben/BlocksAndJava/img/strukt_10pi.png}
+
+\vspace{1cm}
+
+\textbf{Zeichne hier die Struktogramme für die restlichen Methoden:}
+
+\LoesungKaro{\\
+\Large
++ double betrag(double z1) \\
+\includegraphics[width=\textwidth]{Aufgaben/BlocksAndJava/img/strukt_betrag.png} \\\\
++ double potenzieren(double b, double p) \\
+\includegraphics[width=\textwidth]{Aufgaben/BlocksAndJava/img/strukt_protenz.png}}{25}
+
+\pagebreak
+
+\Large
+\begin{lstlisting}[escapechar=\&][]
+public class ErweiterterTaschenrechner
+{    
+    public & \LoesungLuecke{double betrag(double z1) \{ }{15cm} &
+    
+        & \LoesungLuecke{if(z1 < 0) \{ }{15cm} &
+        
+            & \LoesungLuecke{z1 = -1 * z1;}{15cm} &
+            
+        & \LoesungLuecke{\}}{15cm} &        
+    }
+    public & \LoesungLuecke{double piAusgeben(double x) \{ }{15cm} &
+    
+        & \LoesungLuecke{for(int i=0; i < x; i++) \{ }{15cm} &
+        
+            & \LoesungLuecke{System.out.println(Math.PI);}{15cm} &
+            
+        & \LoesungLuecke{\}}{15cm} &
+    }
+    public & \LoesungLuecke{double potenzieren(double b, double p) \{ }{15cm} &
+
+        & \LoesungLuecke{double ergebnis = 1.0;}{15cm} &
+    
+        & \LoesungLuecke{for(int i=0; i < p; i++) \{ }{15cm} &
+        
+            & \LoesungLuecke{ergebnis = ergebnis * b;}{15cm} &
+            
+        & \LoesungLuecke{\}}{15cm} &
+            
+        & \LoesungLuecke{return ergebnis;}{15cm} &
+    }
+}
+\end{lstlisting}

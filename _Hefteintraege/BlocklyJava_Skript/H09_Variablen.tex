@@ -1,0 +1,30 @@
+\Hefteintrag{2}{Übersicht: Variablen}{%
+
+
+
+\Large \emphColB{Wertzuweisung} \large mit Gleichheitszeichen \emph{von rechts nach links}.
+
+Schema: \emph{name = Wert;}\\
+Beispiel: \emph{alter = 14;}
+
+\vspace{0.4cm}\Large \emphColA{Verwendung des Werts} \large mit Variablenname statt eines Werts
+
+Beispiel 1: \emph{System.out.println(alter);} statt  \emph{System.out.println(14);}\\
+Beispiel 2: \emph{alter = alter + 1;} statt \emph{alter = 14 + 1;}
+
+\vspace{0.4cm}\Large \emphColC{Vergleich des Werts} \large mit \emph{< , <= , == , >= , > ,  != , name.equals(Wert)}
+
+Beispiele: \emph{x == 5} (x \LoesungLuecke{ist gleich}{4cm} 5) , \emph{x != 5} (x \LoesungLuecke{ungleich}{4cm} 5) , \emph{text.equals("Hallo")}~(text \LoesungLuecke{ist "Hallo"}{4cm}),
+
+
+\vspace{0.4cm}\Large \emphColB{Deklaration} \large = Erstellen einer Varibale und Festlegung ihrer Eigenschaften.
+
+\vspace{0.4cm}\Large \emphColA{Arten von Variablen} \large in der objektorientierten Programmierung:
+\begin{itemize}
+    \item \LoesungLuecke{lokale Variable}{8cm} deklariert  mit \emph{\textbf{Datentyp name;}} in einem Code-Block und nur dort verfügbar.
+    \item \LoesungLuecke{Parameter}{8cm} (manchmal auch: Input/Argument) deklariert  mit \emph{\textbf{(Datentyp name)}} in den Klammern des Methodenkopfs und nur in dieser Methode verfügbar. Wert wird bei jedem Aufruf neu festgelegt.
+    \item \LoesungLuecke{Attribut}{8cm} deklariert am Anfang der Klasse mit \emph{\textbf{private~Datentyp~name;}} Verfügbar in der ganzen Klasse mit anderem Wert für jedes Objekt. Zur Unterscheidung von lokalen Variablen kann bei der Verwendung auch \emph{this.name} geschrieben werden.
+\end{itemize}
+
+
+}

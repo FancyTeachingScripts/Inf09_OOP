@@ -1,0 +1,30 @@
+\Hefteintrag{2}{Methodenköpfe}{%
+
+Im \LoesungLuecke{Methodenkopf}{8cm} können neben dem Namen noch weitere Informationen nach folgendem Schema gespeichert werden: 
+
+\emphColB{Zugriffsmodifizierer} \emphColA{Rückgabetyp} \emphColC{name}(\emphColA{Datentyp} \emphColC{parametername}) \{ //... \}
+
+
+\emphColB{public} \emphColA{void} \emphColC{schritteLaufen}(\emphColA{int} \emphColC{anzahl}, ...) \{ //... \}
+
+\vspace{0.5cm}
+
+Methodenname und Parametername können weitgehend frei gewählt werden (Groß- und Kleinschreibung beachten!). Folgendes ist \textbf{nicht} erlaubt:
+\LoesungLine{Leerzeichen im Namen, Zahlen am Anfang des Namens, Rechenzeichen im Namen, Schlüsselwörter als Name}{3}
+
+\vspace{0.5cm}
+
+Die verwendeten \LoesungLuecke{Schlüsselwörter}{8cm} haben folgende Bedeutungen:
+
+\emphColB{Zugriffsmodifizierer: public} - Methode kann ‚überall‘ verwendet werden. (im Gegensatz dazu \emph{private}: nur in der gleichen Klasse)
+
+\emphColA{Datentyp} - Art der Daten (z.B. Ganzzahlen: \LoesungLuecke{int}{2cm}, Kommazahlen: \LoesungLuecke{double}{3cm}, Text: \LoesungLuecke{String}{3cm}, Wahrheitswert: \LoesungLuecke{boolean}{4cm})
+
+\emphColA{Rückgabetyp} - Datentyp des Rückgabewerts (=\LoesungLuecke{return-value}{7cm}). Kann z.B. Ergebnis einer Berechnung sein. 
+
+\emph{Besonderer Rückgabetyp} - \emph{void} bedeutet, die Methode hat keinen Rückgabewert. Außer bei void wird immer eine return-Anweisung benötigt.
+
+\textbf{Parameter} - Speichert bei jedem Aufruf einen neuen Wert, der im Methodenrumpf über den Namen verwendet werden kann.
+
+
+}

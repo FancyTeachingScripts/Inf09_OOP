@@ -1,0 +1,75 @@
+\section{Spieler programmieren}
+
+\begin{minipage}[t]{0.56\textwidth}
+\vspace{-11cm}
+Probiere nach jedem Schritt aus, was passiert, wenn du dein Spiel startest!
+\begin{enumerate}
+    \item Programmiere die Klasse Spieler wie im Klassendiagramm rechts vorgegeben. Attribute erstellst du über \emph{Variable $\rightarrow$ Create variable} (und anschließend Eingabe des Namens.\\ 
+    $\rightarrow$Programmiere getX() und getY() als Standard-Getter, lasse run() erstmal leer.
+    \item Setze in run(), die Koordinaten auf feste Werte und finde heraus, wie groß das Spielfeld ist. Den Wert setzt man so: \includegraphics[height= 15pt]{Aufgaben/BlocksAndJava/img/setX123.png} 
+    \item Notiere den Programmcode von getX() und getY() auf der Rückseite.
+    \item Das Spielfeld führt die Methode run() seiner Spieler-Objekte ca. 25x pro Sekunde aus. Finde heraus, wie du ein Spieler-Objekt auf dem Spielfeld bewegen kannst.
+    \item Wie kann man die Bewegungsgeschwindigkeit des Spielers festlegen? Probiere deine Idee im Programm aus und ergänze das Klassendiagramm und den Programmcode auf der Rückseite.
+    \item Wie kann man zu Beginn des Spiels die Startposition des Spielers festlegen? Probiere auch das wieder aus und ergänze das Klassendiagramm.
+    \item Das Spielfeld kann außerdem den Rückgabewert einer Methode getText() von seinen Spielerobjekten anzeigen. Überlege dir eine solche Methode und ergänze sie auf der Rückseite und im Diagramm.
+    \item Das Spielfeld überprüft, ob der Spieler mit einer Münze zusammengestoßen ist und ruft, falls ja, die Methode crashMuenze() des Spieler-Objekts auf. Ausprobieren$\rightarrow$Klassendiagramm$\rightarrow$Code :)
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.42\textwidth}
+
+\includegraphics[width=0.9\linewidth]{Aufgaben/BlocksAndJava/img/57_Klassendiagramm.png}
+\end{minipage}
+
+\large
+\begin{lstlisting}
+public class Spieler {
+    private double x;
+    private double y;
+
+    (*@\LoesungLuecke{return x;}{10cm}@*)
+
+    (*@\LoesungLuecke{return x;}{10cm}@*)
+    
+    public double getX() {
+    
+        (*@\LoesungLuecke{return x;}{10cm}@*)
+    }
+    public double getY() {
+    
+        (*@\LoesungLuecke{return y;}{10cm}@*)
+    }
+    public void run() {
+    
+        (*@\LoesungLuecke{x += speedX;}{10cm}@*)
+        
+        (*@\LoesungLuecke{y += speedY;}{10cm}@*)
+        
+        (*@\LoesungLuecke{y += speedY;}{10cm}@*)
+    }
+    
+    public void (*@\LoesungLuecke{setX(double wert}{10cm}@*) {
+    
+        (*@\LoesungLuecke{x = wert;}{10cm}@*)
+    }
+    
+    public void (*@\LoesungLuecke{setY(double wert}{10cm}@*) {
+    
+        (*@\LoesungLuecke{y = wert;}{10cm}@*)
+    }
+    
+    public String (*@\LoesungLuecke{getText(double wert}{10cm}@*) {
+    
+        (*@\LoesungLuecke{y = wert;}{15cm}@*)
+        
+        (*@\LoesungLuecke{y = wert;}{15cm}@*)
+    }
+    
+    public void (*@\LoesungLuecke{setY(double wert}{10cm}@*) {
+    
+        (*@\LoesungLuecke{y = wert;}{15cm}@*)
+        
+        (*@\LoesungLuecke{y = wert;}{15cm}@*)
+    }
+}
+\end{lstlisting}

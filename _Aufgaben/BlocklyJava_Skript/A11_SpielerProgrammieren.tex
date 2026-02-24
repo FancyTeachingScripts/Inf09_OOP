@@ -1,0 +1,103 @@
+\Aufgabe{Spieler programmieren}
+
+\begin{minipage}[t]{0.5\textwidth}
+\normalsize
+\vspace{-11cm}
+Probiere nach jedem Schritt aus, was passiert, wenn du dein Spiel (so wie oben) startest!
+\begin{enumerate}
+    \item Programmiere die Klasse Spieler wie im Klassendiagramm rechts vorgegeben. Attribute erstellst du über \emph{Variable $\rightarrow$ Create variable} (und anschließend Eingabe des Namens).\\ 
+    $\rightarrow$Programmiere \emph{getX()} und \emph{getY()} als Standard-Getter, lasse \emph{run()} erstmal leer.
+    \item Erstelle einen Konstruktor und setze dort die Koordinaten auf feste Werte und finde damit heraus, wie groß das Spielfeld ist. Den Wert setzt man so: \includegraphics[height= 20pt]{_Aufgaben/BlocksAndJava/img/setX123.png} 
+    \item Notiere den Programmcode von \emph{getX()} und \emph{getY()} auf der nächsten Seite.
+    \item Das Spielfeld führt die Methode \emph{run()} seiner Spieler-Objekte ca. 25x pro Sekunde aus. Finde heraus, wie du damit ein Spieler-Objekt auf dem Spielfeld bewegen kannst.
+    \item Wie kann man die Bewegungsgeschwindigkeit des Spielers festlegen? Probiere deine Idee im Programm aus und ergänze das Klassendiagramm und den Programmcode auf der nächsten Seite.
+    \item Wie kann man zu Beginn des Spiels die Startposition des Spielers (bei jedem neuen Objekt woanders) festlegen? Probiere auch das wieder aus und ergänze das Klassendiagramm.
+    \item Das Spielfeld kann außerdem den Rückgabewert einer Methode \emph{getText()} von seinen Spielerobjekten anzeigen. Überlege dir eine solche Methode und ergänze sie auf der nächsten Seite und im Diagramm.
+    \item Das Spielfeld überprüft nach jeder Ausführung von \emph{run()}, ob der Spieler mit irgendetwas zusammengestoßen ist und ruft, falls ja, die Methode \emph{crash()} oder \emph{crash(String klassenname)} des Spieler-Objekts auf. Ausprobieren$\rightarrow$Klassendiagramm$\rightarrow$Code auf Rückseite :) 
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\textwidth}
+\large
+%\includegraphics[width=0.9\linewidth]{_Aufgaben/BlocksAndJava/img/57_Klassendiagramm.png}
+\begin{tikzpicture}
+\begin{class}[text width=\linewidth]{Spieler}{0 ,0}
+\attribute{- double x}
+\attribute{- double y}
+\attribute{}
+\attribute{}
+\attribute{}
+\attribute{}
+\attribute{}
+\operation{+ void run()}
+\operation{+ double getX()}
+\operation{+ double getY()}
+\operation{}
+\operation{}
+\operation{}
+\operation{}
+\operation{}
+\operation{}
+\operation{}
+\operation{}
+\operation{}
+\operation{}
+\operation{}
+\end{class}
+\end{tikzpicture}
+\end{minipage}
+
+\pagebreak
+
+\large
+\begin{lstlisting}
+public class Spieler {
+    private double x;
+    private double y;
+
+    (*@\LoesungLuecke{return x;}{10cm}@*)
+
+    (*@\LoesungLuecke{return x;}{10cm}@*)
+    
+    public double getX() {
+    
+        (*@\LoesungLuecke{return x;}{10cm}@*)
+    }
+    public double getY() {
+    
+        (*@\LoesungLuecke{return y;}{10cm}@*)
+    }
+    public void run() {
+    
+        (*@\LoesungLuecke{x += speedX;}{10cm}@*)
+        
+        (*@\LoesungLuecke{y += speedY;}{10cm}@*)
+        
+        (*@\LoesungLuecke{y += speedY;}{10cm}@*)
+    }
+    
+    public void (*@\LoesungLuecke{setX(double wert}{10cm}@*) {
+    
+        (*@\LoesungLuecke{x = wert;}{10cm}@*)
+    }
+    
+    public void (*@\LoesungLuecke{setY(double wert}{10cm}@*) {
+    
+        (*@\LoesungLuecke{y = wert;}{10cm}@*)
+    }
+    
+    public String (*@\LoesungLuecke{getText(double wert}{10cm}@*) {
+    
+        (*@\LoesungLuecke{y = wert;}{15cm}@*)
+        
+        (*@\LoesungLuecke{y = wert;}{15cm}@*)
+    }
+    
+    public (*@\LoesungLuecke{Spieler(double startX, double startY}{10cm}@*) {
+    
+        (*@\LoesungLuecke{z = wert;}{15cm}@*)
+        
+        (*@\LoesungLuecke{y = wert;}{15cm}@*)
+    }
+}
+\end{lstlisting}

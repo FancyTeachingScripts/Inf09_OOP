@@ -1,0 +1,32 @@
+\Hefteintrag{1.5}{Besondere Methoden: Konstruktoren}{%
+Konstruktoren sind spezielle Methoden, die genutzt werden, um ein \emphColA{Objekt zu initialisieren/konstruieren}. Ein Konstruktor wird \emphColA{automatisch beim Erstellen eines Objekts} aufgerufen. 
+
+In Java erkennt man einen Konstruktor insb. an zwei Dingen:
+\begin{enumerate}
+    \item Er \emphColA{heißt} \emphColA{\LoesungLuecke{genauso wie die Klasse}{12cm}}.
+    \item Er hat \emphColA{keinen \LoesungLuecke{Rückgabetyp}{8cm}}.
+\end{enumerate}
+
+Ansonsten verhält er sich wie eine Methode und kann z.B. Parameter haben, die dann oft als Startwerte für das Objekt dienen.
+
+Ein typischer Konstruktor im Programmcode sieht z.B. so aus: \\
+\emphColB{public Spieler(double startX , double startY) \{ \\ 
+~~~~~~x = startX;\\
+~~~~~~y = startY;\\
+\}}
+
+Im Klassendiagramm würde dieses Beispiel so eingetragen:
+
+\vspace{0.2cm}
+
+\emphColB{\LoesungLuecke{+ Spieler(double startX, double startY)}{12cm}}
+
+
+
+
+Ein neues Objekt erstellt und speichert man dann z.B. so: \emph{Spieler s1 = new Spieler(100,50);}
+
+
+
+
+}
