@@ -4,10 +4,10 @@
         {
             "label": "compile-single-tex",
             "type": "shell",
-            "command": "powershell",
+            "command": "bash",
             "args": [
-                "-Command",
-                "lualatex -interaction=nonstopmode main.tex; lualatex -interaction=nonstopmode main.tex"
+                "-c",
+                "lualatex -interaction=nonstopmode main.tex && lualatex -interaction=nonstopmode main.tex"
             ],
             "group": "build",
             "presentation": {
@@ -21,10 +21,9 @@
         {
             "label": "build-all-main-tex",
             "type": "shell",
-            "command": "powershell",
+            "command": "bash",
             "args": [
-                "-ExecutionPolicy", "Bypass",
-                "-File", ".vscode/build-parallel.ps1"
+                ".vscode/build-parallel.sh"
             ],
             "group": "build",
             "presentation": {
